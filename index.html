@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Burn - #1 Fat-Burning Coffee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4500;
+        }
+        .benefits {
+            text-align: left;
+            padding: 10px;
+        }
+        .benefits li {
+            margin: 10px 0;
+        }
+        .timer {
+            font-size: 20px;
+            color: red;
+            margin: 10px 0;
+        }
+        .cta-button {
+            background: #ff4500;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background: #e63900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Java Burn – The Ultimate Fat-Burning Coffee!</h1>
+        <p><b>Boost Your Metabolism & Burn Fat Naturally While Drinking Coffee</b></p>
+        
+        <img src="https://your-image-url-here.com" alt="Java Burn Before After" width="100%" style="border-radius: 10px;">
+        
+        <h2>💪 Key Benefits:</h2>
+        <ul class="benefits">
+            <li>✅ Burns fat naturally</li>
+            <li>✅ Increases metabolism</li>
+            <li>✅ 100% safe & natural ingredients</li>
+            <li>✅ No need for diet or exercise</li>
+            <li>✅ Delicious & easy to use</li>
+        </ul>
+        
+        <h3>⚡ Limited Time Discount Ends In:</h3>
+        <p class="timer" id="countdown">00:00:00</p>
+        
+        <a href="YOUR_CLICKBANK_AFFILIATE_LINK_HERE" class="cta-button">🔥 Get Java Burn Now!</a>
+    </div>
+
+    <script>
+        function countdownTimer() {
+            const targetTime = new Date().getTime() + (60 * 60 * 1000);
+            function updateTimer() {
+                let now = new Date().getTime();
+                let remaining = targetTime - now;
+                let hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+                let minutes = Math.floor((remaining / (1000 * 60)) % 60);
+                let seconds = Math.floor((remaining / 1000) % 60);
+                document.getElementById("countdown").innerHTML = `${hours}:${minutes}:${seconds}`;
+                if (remaining > 0) setTimeout(updateTimer, 1000);
+            }
+            updateTimer();
+        }
+        countdownTimer();
+    </script>
+</body>
+</html>
